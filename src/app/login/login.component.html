@@ -1,0 +1,25 @@
+<div class="outer-container">
+    <div class="container">
+        <div class="text-center">
+            <img src="assets/ICBF_LOGO.png" alt="ICBF" class="img-fluid " id="logo">
+        </div>
+        <h1 class="text-center">ICBF</h1>
+        <div class="justify-content-center align-items-center" id="login">
+            <h3 class="text-center text-light">Iniciar sesión</h3>
+
+            <form [formGroup]="loginForm" (ngSubmit)="login()">
+                <div class="form-group">
+                    <label for="email" class="text-light">Correo electrónico</label>
+                    <input type="email" class="form-control" formControlName="email" id="email" placeholder="Correo electrónico">
+                </div>
+                <div class="form-group">
+                    <label for="password" class="text-light">Contraseña</label>
+                    <input type="password" class="form-control" formControlName="password" id="password" placeholder="Contraseña">
+                </div>
+                <div class="text-center">
+                    <button type="submit" class="btn btn-primary">Iniciar sesión</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,62 @@
+<div class="d-flex justify-content-center align-items-center vh-100">
+    <div class="container">
+        
+        <!--Linea de separacion horizontal-->
+        <div class="row">
+            <div class="col-6">
+                <img src="assets/ICBF_LOGO.png" alt="ICBF" class="img-fluid " id="logo">
+            </div>
+            <div class="col-6">
+                <h4>ICBF</h4>
+            </div>
+        </div>
+
+        <div class="row info-menor">
+
+            <h4>Información básica del menor</h4>
+
+            <form [formGroup]="infoMenorForm" (submit)="save()">
+                <div class="form-group">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" class="form-control" formControlName="nombre" id="nombre" placeholder="Nombre">
+                </div>
+                <div class="form-group">
+                    <label for="apellido">Apellido</label>
+                    <input type="text" class="form-control" formControlName="apellido" id="apellido" placeholder="Apellido">
+                </div>
+                <div class="form-group">
+                    <label for="fechaNacimiento">Fecha de nacimiento</label>
+                    <input type="date" class="form-control" formControlName="fechaNacimiento" id="fechaNacimiento" placeholder="Fecha de nacimiento">
+                </div>
+                <div class="form-group">
+                    <label for="identificacion">Identificacion</label>
+                    <input type="text" class="form-control" formControlName="identificacion" id="identificacion" placeholder="identificacion">
+                </div>
+                <div class="form-group">
+                    <label for="nacimiento">Lugar de nacimiento</label>
+                    <input type="text" class="form-control" formControlName="nacimiento" id="nacimiento" placeholder="nacimiento">
+                </div>
+                <div class="form-group">
+                    <label for="indice">Indice de masa corporal</label>
+                    <input type="text" class="form-control" formControlName="indice" id="indice" placeholder="indice">
+                </div>
+                <div class="form-group">
+                    <label for="region">Region</label>
+                    <input type="text" class="form-control" formControlName="region" id="region" placeholder="region">
+                </div>
+                <div class="form-group">
+                    <label for="indice">Estado del menor</label>
+                    <input type="text" class="form-control" formControlName="estado" id="estado" placeholder="Estado del menor">
+                </div>
+                
+                <div style="display: flex; justify-content: center; margin-top: 30px;">
+                    <button class="btn btn-primary" style=" background-color: rgb(97, 213, 91); border: 1px rgb(97, 213, 91) solid;" (submit)="save()"> Guardar información</button>
+                </div>
+                
+            </form>
+        </div>
+
+
+    </div>
+</div>
+

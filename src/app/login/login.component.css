@@ -1,0 +1,42 @@
+#login{
+    background-color: rgb(144, 180, 123);
+    border-radius: 20px;
+}
+
+
+form{
+    margin: 30px;
+}
+
+button{
+    margin-top: 20px;
+    background-color: rgb(53, 133, 7);
+    border: 1px solid rgb(53, 133, 7);
+    margin-bottom: 30px;
+}
+
+button:hover{
+    background-color: rgb(53, 133, 7);
+    border: 1px solid rgb(53, 133, 7);
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+
+.outer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 100%;
+}
+
+img{
+    width: 200px;
+    height: 250px;
+}
